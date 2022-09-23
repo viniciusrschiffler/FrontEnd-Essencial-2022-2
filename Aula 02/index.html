@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <!-- link rel=stylesheet = tag usada para importar CSS de um arquivo separado para o HTML -->
+
+        <style>
+        /* style = tag usada para passar os estilos css dentro dela */
+        /* Sintaxe CSS =
+            h1 {
+            `h1 = Seletor de quem vai ser aplicado o estilo`
+            `{} = Dentro das chaves que será escrito os estilos`
+                color: red;
+                `color = propriedade css (nesse caso é a propriedade responsável por alterar a cor de texto)`
+                `red = valor da propriedade (nesse caso deixara a cor do texto vermelho)`
+            }
+        */
+
+        h1 {
+            /* px = pixel, unidade de medida fixa para definir tamanho de alguma propriedade */
+            /* % = porcentagem, unidade de medida relativa para definir o tamanho de alguma propriedade,
+                % será relativa ao pai da tag se h1 está dentro de body e tem 25% de width, ele tera 25% do width de body
+            */
+
+            font-size: 10px;
+            /* font-size = tamanho da fonte do elemento */
+            font-family: 'Courier New', Courier, monospace;
+            /* font-family = altera o tipo da fonte */
+            font-weight: 700;
+            /* font-weight = deixa a fonte mais grossa ou mais fina */
+        }
+
+        div {
+            text-align: center;
+            /* text-align = alinha o texto ao meio */
+
+            width: 10px;
+            /* width = largura de um elemento */
+
+            height: 10px;
+            /* height = altura de um elemento */
+
+            min-width: 5px;
+            min-height: 5px;
+            /* min = define a altura ou a largura minima que um elemento terá */
+            
+            max-width: 15px;
+            max-height: 15px;
+            /* max = define a altura ou a largura máxima que um elemento terá */
+
+            border: 10px solid #000;
+            /* border = borda de um elemento, 10px = tamanho da borda, solid = tipo da borda, #000 = cor da borda */
+
+            border-radius: 50%;
+            /* border-radius = arredonda as bordas de um elemento */
+
+            margin: 50px;
+            /* margin = define a margem de um elemento (empurra o elemento para o lado) */
+
+            padding: 50px;
+            /* padding = infla o elemento (como se fosse uma margin mas de dentro para fora) */
+        }
+
+        .ola {
+        /* . = seletor de classe, classe é utilizada quado há a intensão de usar o mesmo etilo em mais de um elemento  */
+        }
+
+        #mundo {
+        /* # = seletor de id, é usado como identificador único, não é uma boa pratica repetir um id */
+        }
+
+        /* Hierarquia dos seletores (do mais fraco para o mais forte) */
+        /* * = seletor de todos */
+        /* . = seletor de classe */
+        /* # = seletor de id */
+        /* style = estilo em linha escrito direto no HTML */
+        /* !important = caso algum estilo estiver usando a propriedade !important ele irá se sobrepor as outras mesmo que o seletor seja mais fraco */
+        
+
+        </style>
+    </head>
+    <body>
+        <h1 class="ola" id="mundo" >Olá Mundo!!</h1>
+    </body>
+</html>
